@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <circle cx="256" cy="256" r="230" fill="#f5e8d0" stroke="#b89a7a" stroke-width="3"/>
+  <circle cx="256" cy="240" r="120" fill="#e6f0dc" stroke="#6d9848" stroke-width="2"/>
+  <path d="M180 280 Q256 380 332 280" fill="none" stroke="#6d9848" stroke-width="2"/>
+  <text x="256" y="248" text-anchor="middle" font-size="48" font-family="sans-serif" fill="#3d2e22">🌍</text>
+</svg>

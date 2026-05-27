@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <rect width="180" height="180" rx="36" fill="#f5f0eb"/>
+  <circle cx="90" cy="80" r="48" fill="#e6f0dc" stroke="#6d9848" stroke-width="2"/>
+  <path d="M55 100 Q90 140 125 100" fill="none" stroke="#6d9848" stroke-width="2"/>
+  <text x="90" y="88" text-anchor="middle" font-size="28" font-family="sans-serif" fill="#3d2e22">🌏</text>
+</svg>

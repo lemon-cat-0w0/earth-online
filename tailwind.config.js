@@ -1,0 +1,65 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        warm: {
+          50: '#fdfaf5',
+          100: '#faf3e6',
+          200: '#f5e8d0',
+          300: '#edd9b3',
+          400: '#d4b896',
+          500: '#b89a7a',
+          600: '#9a7b5f',
+          700: '#7a5f48',
+          800: '#5c4534',
+          900: '#3d2e22',
+        },
+        leaf: {
+          50: '#f4f9f0',
+          100: '#e6f0dc',
+          200: '#cfe3b8',
+          300: '#b0cf8e',
+          400: '#8bb563',
+          500: '#6d9848',
+          600: '#527837',
+          700: '#3e5c2b',
+          800: '#2c4120',
+          900: '#1c2a15',
+        },
+        sky: {
+          50: '#f0f6fb',
+          100: '#dce9f5',
+          200: '#bcd5ed',
+          300: '#90bae1',
+          400: '#629ad4',
+          500: '#407ec0',
+          600: '#3064a0',
+          700: '#284f81',
+          800: '#1e3d63',
+          900: '#142946',
+        },
+        blush: {
+          50: '#fdf5f5',
+          100: '#fae7e8',
+          200: '#f4cdce',
+          300: '#e9a6a8',
+          400: '#db787c',
+          500: '#c45258',
+          600: '#a43a40',
+          700: '#832c32',
+          800: '#5f2127',
+          900: '#3d1519',
+        },
+      },
+      fontFamily: {
+        sans: ['"PingFang SC"', '"Hiragino Sans GB"', '"Microsoft YaHei"', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+}

@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-page: #fdfaf5;
+  --bg-card: #ffffff;
+  --bg-warm: #faf3e6;
+  --text-primary: #3d2e22;
+  --text-secondary: #7a5f48;
+  --text-muted: #b89a7a;
+  --accent-leaf: #6d9848;
+  --accent-sky: #407ec0;
+  --accent-blush: #c45258;
+  --border-color: #edd9b3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 2px;
+}
+
+/* iOS 安全区域适配 */
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* 通用卡片样式 */
+.card {
+  background: var(--bg-card);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+/* 按钮通用 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+}
+.btn:active {
+  transform: scale(0.97);
+  opacity: 0.85;
+}
+.btn-primary {
+  background: var(--accent-leaf);
+  color: white;
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+/* 输入框通用 */
+.input-field {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.input-field:focus {
+  border-color: var(--accent-leaf);
+}
+.input-field::placeholder {
+  color: var(--text-muted);
+}
