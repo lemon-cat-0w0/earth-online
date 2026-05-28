@@ -2,9 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
-import { cloudflare } from "@cloudflare/vite-plugin";
-
 export default defineConfig({
+  base: '/earth-online/',
   plugins: [react(), VitePWA({
     registerType: 'autoUpdate',
     injectRegister: null,
@@ -17,15 +16,15 @@ export default defineConfig({
       background_color: '#f5f0eb',
       display: 'standalone',
       orientation: 'portrait',
-      start_url: '/',
+      start_url: '/earth-online/',
       icons: [
         {
-          src: '/pwa-192x192.png',
+          src: '/earth-online/pwa-192x192.png',
           sizes: '192x192',
           type: 'image/png'
         },
         {
-          src: '/pwa-512x512.png',
+          src: '/earth-online/pwa-512x512.png',
           sizes: '512x512',
           type: 'image/png'
         }
@@ -34,7 +33,7 @@ export default defineConfig({
     workbox: {
       globPatterns: ['**/*.{js,css,html,svg,png,woff2}']
     }
-  }), cloudflare()],
+  })],
   server: {
     port: 3000
   }
