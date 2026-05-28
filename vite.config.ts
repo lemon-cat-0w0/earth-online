@@ -7,7 +7,8 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
+      injectRegister: null,
+      includeAssets: ['favicon.svg', 'apple-touch-icon.svg'],
       manifest: {
         name: '地球Online指南',
         short_name: '地球Online',
