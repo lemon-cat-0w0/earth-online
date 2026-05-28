@@ -31,17 +31,7 @@ export default defineConfig({
         ]
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
-        runtimeCaching: [
-          {
-            urlPattern: /^https?:\/\/.*/i,
-            handler: 'NetworkFirst',
-            options: {
-              cacheName: 'external-resources',
-              expiration: { maxEntries: 50, maxAgeSeconds: 86400 * 30 }
-            }
-          }
-        ]
+        globPatterns: ['**/*.{js,css,html,svg,png,woff2}']
       }
     })
   ],
